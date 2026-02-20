@@ -1,4 +1,3 @@
-using ECommerce.Consumer;
 using ECommerce.QueueTool;
 using ECommerce.Shared.Data;
 using ECommerce.Shared.Queue;
@@ -23,7 +22,6 @@ var builder = Host.CreateDefaultBuilder(args)
         services.AddSingleton<SqliteMessageQueue>();
         services.AddSingleton<IMessageQueue>(sp => sp.GetRequiredService<SqliteMessageQueue>());
 
-        services.AddHostedService<PaymentConsumerService>();
         services.AddSingleton<InteractivePublisherService>();
     });
 
