@@ -30,18 +30,19 @@ ecommerce/
 
 1. Download code from this [repository](https://github.com/leandromonaco/ecommerce)
 2. Run `Start.ps1` (using cross-platform PowerShell)
+![Start](images/Start.gif)
 3. Ensure the application is running successfully:
    - **API** → [http://localhost:53001/swagger](http://localhost:53001/swagger)
    - **UI** → [http://localhost:5174](http://localhost:5174)
 
-![Assignment 1](images/Assignment_01.gif)
+![Assignment 1](images/Application.gif)
 
 ## Assignments
 
-1. **Assignment 1** — Implement an UX improvement that enhance usability and clarity.
+1. **Assignment 1** — Implement a UX improvement that enhances usability and clarity.
 2. **Assignment 2** — Implement the checkout process, including order creation and payment processing.
 
-> Please send your work in a zip file by email in a week time since you receive this document. If you have any questions, feel free to reach out.
+> Please send your work in a zip file by email within a week of receiving this document.
 
 ---
 

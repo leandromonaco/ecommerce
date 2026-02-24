@@ -29,7 +29,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{27339906-6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{EC1F8379-D30F-4358-93C8-DF36CD367B00}"
 	ProjectSection(SolutionItems) = preProject
-		images\Assignment_01.gif = images\Assignment_01.gif
+		images\Application.gif = images\Application.gif
+		images\Start.gif = images\Start.gif
 	EndProjectSection
 EndProject
 Global
