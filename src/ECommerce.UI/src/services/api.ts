@@ -24,16 +24,15 @@ export async function removeFromCart(id: number): Promise<void> {
   await fetch(`${API_BASE}/cart/items/${id}`, { method: "DELETE" });
 }
 
-// TODO: Implement updateCartItem function
-// It should send a PUT request to /api/cart/items/{id}
-// with the updated quantity in the request body
 export async function updateCartItem(
   id: number,
   quantity: number
 ): Promise<void> {
-  // TODO: Send PUT request to ${API_BASE}/cart/items/${id}
-  // with body: JSON.stringify({ quantity })
-  console.log("TODO: implement updateCartItem", id, quantity);
+  await fetch(`${API_BASE}/cart/items/${id}`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ quantity }),
+  });
 }
 
 export async function checkout(): Promise<OrderResponse> {

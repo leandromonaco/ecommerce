@@ -60,13 +60,14 @@ function App() {
     }
   };
 
-  // TODO: Implement handleCheckout
-  // 1. Call api.checkout()
-  // 2. Set the order state with the response
-  // 3. Reload the cart (which should now be empty)
-  // 4. Handle errors appropriately
   const handleCheckout = async () => {
-    setError("TODO: Implement checkout handler");
+    try {
+      const result = await api.checkout();
+      setOrder(result);
+      await loadCart();
+    } catch {
+      setError("Failed to complete checkout");
+    }
   };
 
   const handleRefreshOrder = async () => {

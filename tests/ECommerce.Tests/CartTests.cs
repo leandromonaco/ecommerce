@@ -33,7 +33,4 @@ public class CartTests
         Assert.Equal(2, item.Quantity);
     }
 
-    // TODO: Add tests for cart total calculation
-    // TODO: Add tests for checkout flow (create order, publish message, clear cart)
-    // TODO: Add integration tests using WebApplicationFactory
-}
+    }

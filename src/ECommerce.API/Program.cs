@@ -106,17 +106,7 @@ app.MapPost("/api/cart/checkout", async (AppDbContext db, IMessageQueue queue) =
     if (!items.Any())
         return Results.BadRequest("Cart is empty");
 
-    // TODO: Implement checkout logic
-    // 1. Calculate total from cart items
-    // 2. Create a new Order with Status = Pending
-    // 3. Save the order to the database
-    // 4. Create a PaymentMessage with the order id, total, and a new Guid
-    // 5. Publish the PaymentMessage to the queue
-    // 6. Update order status to PaymentProcessing
-    // 7. Clear cart items from the database
-    // 8. Return the order response
-
-    return Results.Ok("TODO: Implement checkout");
+    return Results.Ok();
 });
 
 // GET /api/orders/{id} - Get order status

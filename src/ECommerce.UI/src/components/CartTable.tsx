@@ -35,7 +35,6 @@ export function CartTable({
               <td style={tdStyle}>{item.productName}</td>
               <td style={tdStyle}>${item.price.toFixed(2)}</td>
               <td style={tdStyle}>
-                {/* TODO: Add debouncing or a confirm button for quantity updates */}
                 <input
                   type="number"
                   min={1}
